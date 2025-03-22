@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test3</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+<!--    <link rel="stylesheet" href="access/lib/fontawesome-free-6.7.2-web/css/all.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    body>section:first-child{
+        width: 100%;
+        height: 100%;
+    }
+    body>section:nth-child(2){
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #0f0f10, #1f1d1f , #1e1e3b);
+        position: relative;
+    }
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: #605959;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    .ijse{
+        width: 100px;
+        height: 20px;
+    }
+    nav{
+        width: 1200px;
+        height: 75px;
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 0px;
+        font-size: 12px;
+        font-family: Arial;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Arial;
+        color: #c9ff00;
+    }
+    i{
+        position: absolute;
+        right: 10px;
+    }
+    .hero-section{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #21263b, #6a0572);
+    }
+    .profilepic{
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+    }
+    .header-rightside{
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+        margin: auto;
+    }
+    .header-leftside>div:first-child{
+        font-size: 85px;
+        font-family: "Monotype Corsiva";
+        position: absolute;
+        right: 400px;
+        bottom: 300px;
+        color: white;
+        font-weight: 900;
+        text-shadow:
+                -6px -1px 2px black,
+                1px -1px 2px black,
+                -1px  1px 2px black,
+                1px  1px 2px black;
+    }
+    .header-leftside>div:nth-child(2){
+        font-size: 30px;
+        color: #000000;
+        position: absolute;
+        right: 400px;
+        bottom: 260px;
+    }
+    .header-leftside>div:nth-child(3){
+        font-size: 30px;
+        color: #181717;
+        position: absolute;
+        right: 400px;
+        bottom: 220px;
+    }
+    .header-leftside>div:nth-child(4){
+        font-size: 30px;
+        color: #211f1f;
+        position: absolute;
+        right: 400px;
+        bottom: 180px;
+    }
+    .header-leftside>button{
+        width: 180px;
+        height: 50px;
+        border-radius: 20px;
+        position: absolute;
+        right: 500px;
+        left: 0;
+        bottom: 100px;
+        margin: auto;
+        background: linear-gradient(to bottom, #21263b, #1a1f33);
+        color: white;
+        padding: 12px 24px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace;
+        color: #cad100;
+    }
+    .header-leftside>button:hover{
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    }
+    .services{
+        width: 100%;
+        height: 10vh;
+        color: #00d1d1;
+        font-size: 70px;
+        font-family: Dubai Light;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card{
+        width: 260px;
+        height: 60vh;
+        /*background-color: #00d1d1;*/
+        border: 1px solid white;
+        margin: 38px;
+        position: relative;
+        border-radius: 30px;
+        background-color: #ffffff rebag(255, 255, 255, 0.8);
+        backdrop-filter: blur(5px);
+        transition: 0.5s ease;
+    }
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    @media all and (min-width: 500px){
+        i{
+            display: none;
+        }
+    }
+    @media all and (max-width: 970px){
+        .ijse{
+            width: 90px;
+            height: 18px;
+        }
+        nav ul li{
+            font-size: 10px;
+        }
+        .header-leftside>div:first-child{
+            font-size: 68px;
+        }
+        .profilepic{
+            width: 280px;
+            height: 280px;
+        }
+        .header-leftside>div:nth-child(2){
+            font-size: 25px;
+        }
+        .header-leftside>div:nth-child(3){
+            font-size: 25px;
+        }
+        .header-leftside>div:nth-child(4){
+            font-size: 25px;
+        }
+        .header-leftside>button{
+            width: 160px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 12px;
+            right: 450px;
+            bottom: 120px;
+            padding: 8px 20px;
+        }
+    }
+    @media all and (max-width: 850px){
+        .header-leftside>div:first-child{
+            font-size: 55px;
+            right: 350px;
+            bottom: 350px;
+            font-weight: 700;
+        }
+        .profilepic{
+            width: 260px;
+            height: 260px;
+        }
+        .header-rightside{
+            bottom: 180px;
+        }
+        .header-leftside>div:nth-child(2){
+            font-size: 25px;
+            right: 350px;
+            bottom: 310px;
+        }
+        .header-leftside>div:nth-child(3){
+            font-size: 25px;
+            right: 350px;
+            bottom: 280px;
+        }
+        .header-leftside>div:nth-child(4){
+            font-size: 25px;
+            right: 350px;
+            bottom: 250px;
+        }
+        .header-leftside>button{
+            width: 140px;
+            height: 33px;
+            font-size: 14px;
+            border-radius: 10px;
+            right: 400px;
+            bottom: 200px;
+            padding: 7px 20px;
+        }
+    }
+    @media all and (max-width: 720px){
+        .header-leftside>div:first-child{
+            font-size: 45px;
+            right: 200px;
+            bottom: 500px;
+            font-weight: 700;
+        }
+        .header-leftside>div:nth-child(2){
+            font-size: 20px;
+            right:290px;
+            bottom:460px
+        }
+        .header-leftside>div:nth-child(3){
+            font-size: 20px;
+            right:285px;
+            bottom:420px
+        }
+        .header-leftside>div:nth-child(4){
+            font-size: 20px;
+            right:275px;
+            bottom:380px
+        }
+        .header-rightside{
+            right: 225px;
+            bottom: 100px;
+        }
+        nav ul li{
+            display: none;
+        }
+        .ijse{
+            width: 80px;
+            height: 16px;
+        }
+        .header-leftside>button{
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+            border-radius: 10px;
+            right: 15px;
+            bottom: 40px;
+        }
+    }
+    @media all and (max-width: 500px) {
+        .header-leftside > div:first-child {
+            font-size: 22px;
+            right: 153px;
+            bottom: 550px;
+            font-weight: 700;
+        }
+
+        .header-leftside > div:nth-child(2) {
+            font-size: 14px;
+            right: 180px;
+            bottom: 510px
+        }
+
+        .header-leftside > div:nth-child(3) {
+            font-size: 14px;
+            right: 178px;
+            bottom: 480px
+        }
+
+        .header-leftside > div:nth-child(4) {
+            font-size: 14px;
+            right: 172px;
+            bottom: 450px
+        }
+
+        .header-rightside {
+            right: 100px;
+            bottom: 150px;
+        }
+        .header-leftside > button {
+            width: 70px;
+            height: 20px;
+            font-size: 8px;
+            border-radius: 7px;
+            right: -20px;
+            bottom: 100px;
+            padding: 5px 20px;
+        }
+    }
+    @media all and (max-width: 300px) {
+        .header-leftside > div:first-child {
+            font-size: 18px;
+            right: 90px;
+            bottom: 550px;
+            font-weight: 700;
+        }
+
+        .header-leftside > div:nth-child(2) {
+            font-size: 10px;
+            right: 120px;
+            bottom: 520px
+        }
+
+        .header-leftside > div:nth-child(3) {
+            font-size: 10px;
+            right: 118px;
+            bottom: 500px
+        }
+
+        .header-leftside > div:nth-child(4) {
+            font-size: 10px;
+            right: 113px;
+            bottom: 480px
+        }
+
+        .header-rightside {
+            right: 62px;
+            bottom: 250px;
+        }
+        .profilepic{
+            width: 180px;
+            height: 180px;
+            border-top-left-radius: 30%;
+            border-top-right-radius: 30%;
+        }
+        .header-leftside > button {
+            width: 70px;
+            height: 20px;
+            font-size: 8px;
+            border-radius: 7px;
+            right: 0px;
+            bottom: 150px;
+            padding: 5px 20px;
+        }
+    }
+    .title{
+        /*position: absolute;*/
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Arial Black";
+        /*right: 0;*/
+        /*left: 0;*/
+        /*margin: auto;*/
+    }
+</style>
+</head>
+<body>
+    <sction>
+        <header>
+            <div><img class="ijse" src="access/lib/ig-removebg-preview.png"></div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars"></i>
+        </header>
+        <div class="hero-section">
+            <div class="header-leftside">
+                <div>Iresh Chathuranga</div>
+                <div>Web developer</div>
+                <div>UI/UX designer</div>
+                <div>Fullstak developer</div>
+                <button>Explore</button>
+            </div>
+            <div class="header-rightside">
+                <img class="profilepic" src="access/mypro.jpg">
+            </div>
+        </div>
+    </sction>
+    <section>
+        <div class="services">SERVICES</div>
+        <div class="grid">
+            <div class="card">
+                <div class="title">Web Deverloper</div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolor excepturi hic laboriosam magni mollitia nobis obcaecati odit quae quaerat quibusdam quod ratione recusandae sapiente suscipit temporibus totam veniam voluptatum?</p>
+            </div>
+            <div class="card">
+                <div class="title">Web Deverloper</div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolor excepturi hic laboriosam magni mollitia nobis obcaecati odit quae quaerat quibusdam quod ratione recusandae sapiente suscipit temporibus totam veniam voluptatum?</p>
+            </div>
+            <div class="card">
+                <div class="title">Web Deverloper</div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolor excepturi hic laboriosam magni mollitia nobis obcaecati odit quae quaerat quibusdam quod ratione recusandae sapiente suscipit temporibus totam veniam voluptatum?</p>
+            </div>
+            <div class="card">
+                <div class="title">Web Deverloper</div>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolor excepturi hic laboriosam magni mollitia nobis obcaecati odit quae quaerat quibusdam quod ratione recusandae sapiente suscipit temporibus totam veniam voluptatum?</p>
+            </div>
+        </div>
+    </section>
+    <script src="access/lib/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css"></script>
+</body>
+</html>

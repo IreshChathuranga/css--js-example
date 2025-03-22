@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        /*div{*/
+        /*    width: 300px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background: cadetblue;*/
+        /*    border: 3px solid cyan;*/
+        /*    animation-name: my_animate;!*animation eke name eka*!*/
+        /*    animation-duration: 3s;!*animate wenna oni time eka*!*/
+        /*    animation-delay: 1s;!*animate wenna kalin time eka wate kirima*!*/
+        /*    animation-iteration-count: infinite;!*animation eka nawath nawth kirima*!*/
+        /*    animation-direction: alternate-reverse;!*normal-default thiyen eka/reverse-last keyframe eka sita mulata enwa/alternate-first keyframe eke sita anthimata enwa eka nawath last keyframe eke sita mulata enwa/alter-reverse-alternate eke anith paththa*!*/
+        /*    transition-timing-function: ease-out;*/
+        /*}*/
+        /*@keyframes my_animate {*/
+        /*    form{*/
+        /*        !*transform: rotate(0deg);*!*/
+        /*        background: cadetblue;*/
+        /*    }*/
+        /*    to{*/
+        /*        !*transform: rotate(360deg);*!*/
+        /*        background: blue;*/
+        /*        !*width: 400px;*!*/
+        /*        !*height: 400px;*!*/
+        /*        !*border-radius: 100%;*!*/
+        /*        margin-left: 1000px;*/
+        /*    }*/
+        /*}*/
+        div{
+            width: 200px;
+            aspect-ratio: 1/1;
+            animation-name: change_color;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+        @keyframes change_color {
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: rebeccapurple;
+            }
+            40%{
+                background-color: skyblue;
+            }
+            60%{
+                background-color: greenyellow;
+            }
+            80%{
+                background-color: turquoise;
+            }
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

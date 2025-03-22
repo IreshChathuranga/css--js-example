@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body>div>div{
+            color: transparent;
+            width: 200px;
+            height:100px;
+            background: transparent;
+        }
+        body>div>div:hover{
+            font-size: 300px;
+            color: white;
+            transform: scale(1.1);
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>Title</div>
+    </div>
+</body>
+</html>

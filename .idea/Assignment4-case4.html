@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+  <style>
+      div{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        border: 2px solid red;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: waterdrop;
+      }
+      @keyframes waterdrop {
+        from{
+          width: 0;
+        }
+        to{
+          opacity: 0;/*max value=1l*/
+          width: 300px;
+        }
+      }
+  </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

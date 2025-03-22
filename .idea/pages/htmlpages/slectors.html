@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selector</title>
+    <style>
+        /*h1:hover{*/
+        /*    color: cyan;*/
+        /*}*/
+        /*h1:active{*/
+        /*     color: #5bdc0b;*/
+        /* }*/
+        /*h1:after{*/
+        /*    color: #af0bdc;*/
+        /*}*/
+        /*a:link{*/
+        /*    color: cadetblue;*/
+        /*}*/
+        /*a:visited{*/
+        /*    color: hotpink;*/
+        /*}*/
+
+        /*input:focus{*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+        /*li:first-child{*/
+        /*    color: #d1007d;*/
+        /*}*/
+        /*li:nth-child(3){*/
+        /*    color: #d1007d;*/
+        /*}*/
+        /*li:nth-child(odd){*/
+        /*    color: #5ed100;*/
+        /*}*/
+        /*li:nth-child(even){*/
+        /*    color: #d1007d;*/
+        /*}*/
+        /*li:nth-child(3n){*/
+        /*    color: #5bdc0b;*/
+        /*}*/
+        /*li:nth-child(3n-1){*/
+        /*    color: #cad100;*/
+        /*}*/
+        /*li:nth-child(3n+1){*/
+        /*    color: #00d1d1;*/
+        /*}*/
+        /*li:nth-child(4n){*/
+        /*    color: #d11800;*/
+        /*}*/
+        /*li:nth-last-child(3){*/
+        /*    color: #cad100;*/
+        /*}*/
+        /*li:last-child{*/
+        /*    color: darkturquoise;*/
+        /*}*/
+        /*------------------------------------------------------------------------*/
+        /*pseudo-element*/
+        /*h1::before{*/
+        /*    content: "😏";*/
+        /*}*/
+        /*h1::after{*/
+        /*    content: "😮 Sri Lanka";*/
+        /*    color: chartreuse;*/
+        /*}*/
+        h1::first-letter{
+            color: #d1007d;
+        }
+        h1::first-line{
+            color: #00d173;
+        }
+        h1::selection{
+            background-color: chartreuse;
+            color: #af0bdc;
+        }
+
+        ::marker{
+            content: "🥱";
+        }
+
+        input::placeholder{
+            color: chocolate;
+        }
+        input::file-selector-button{
+            color: #5bdc0b;
+        }
+        input::file-selector-button:hover{
+            background-color: #00d1d1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+<!--    <a href="https://en.wikipedia.org/wiki/Bolton">UoBolton</a>-->
+<!--    <a href="https://google.com">Google</a>-->
+
+    <input placeholder="Enter Your Name" type="text">
+    <input placeholder="Enter Your Name" type="file">
+    <input placeholder="Enter Your Name" type="password">
+    <input placeholder="Enter Your Name" type="email">
+    <input placeholder="Enter Your Name" type="radio">
+    <input placeholder="Enter Your Name" type="search">
+    <input placeholder="Enter Your Name" type="url">
+    <input placeholder="Enter Your Name" type="time">
+
+
+    <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>.net</li>
+        <li>go</li>
+        <li>pearl</li>
+        <li>.net</li>
+        <li>go</li>
+        <li>pearl</li>
+    </ol>
+</body>
+</html>

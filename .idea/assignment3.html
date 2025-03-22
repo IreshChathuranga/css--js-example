@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        /** {*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    box-sizing: border-box;*/
+        /*    font-family: 'Poppins', sans-serif;*/
+        /*}*/
+        /*header>div:first-child{*/
+        /*    width: 100vw;*/
+        /*    height: 8vh;*/
+        /*    background-color: #ffffff;*/
+        /*}*/
+        /*header>div:nth-child(2){*/
+        /*    width: 100vw;*/
+        /*    height: 83vh;*/
+        /*    background-color: #613c91;*/
+        /*    position: relative;*/
+        /*}*/
+        /*header>div:nth-child(3){*/
+        /*    width: 100vw;*/
+        /*    height: 6vh;*/
+        /*    position: absolute;*/
+        /*    bottom: 0;*/
+        /*    background-color: gray;*/
+        /*}*/
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 13px 30px;
+            background: white;
+        }
+        /*.nav ul {*/
+        /*    list-style: none;*/
+        /*    display: flex;*/
+        /*    */
+        /*}*/
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            position: absolute;
+            right: 0;
+            top: 12px;
+        }
+        .nav ul li {
+            margin: 0 15px;
+            float: left;
+        }
+
+        .nav ul li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 6px 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            font-family: Arial;
+        }
+        body>header>div:nth-child(2){
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 200px;
+            background: purple;
+            padding: 20px;
+            color: white;
+            min-height: 100vh;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /*font-family: 'Poppins', sans-serif;*/
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div>
+        <div class="logo"> <img src="access/lib/ig-removebg-preview.png" alt="IUSE Logo"> </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="image-container">
+                <div class="image-box"><img src="icon.png" alt="Icon"></div>
+                <div class="image-box"><img src="icon.png" alt="Icon"></div>
+                <div class="image-box"><img src="icon.png" alt="Icon"></div>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <p>Aliquam amet dolore eaque deserunt quos...</p>
+                <p>Amet enim explicabo non omnis...</p>
+            </div>
+        </main>
+    </div>
+    <div></div>
+</header>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 3</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 200vh;
+        }
+        body>div:first-child{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .first-circle{
+            z-index: 2;
+            border: 10px solid rgb(166, 114, 96);
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            background-color:transparent;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .second-circle{
+            z-index: 2;
+            border: 10px solid rgb(255, 29, 1);
+            position: fixed;
+            width: 180px;
+            height: 180px;
+            background-color:transparent;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>div:nth-child(2){
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .circle1{
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-color: #af0bdc;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>div:nth-child(3){
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .circle2{
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: #00d1d1;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>div:nth-child(4){
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .circle3{
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background-color: #ce6a21;
+            border-radius: 50%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .text{
+            position: absolute;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            items: center;
+            white-space: per-line;
+            bottom: 0;
+            top: 0px;
+            left: 0px;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="first-circle">
+            <div class="second-circle"></div>
+        </div>
+    </div>
+    <div>
+        <div class="circle1">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+    <div>
+        <div class="circle2">
+            <div class="text">Welcome</div>
+        </div>
+    </div>
+    <div>
+        <div class="circle3">
+            <div class="text">Institute <br>of <br>Software Engineerng</div>
+        </div>
+    </div>
+
+</body>
+</html>

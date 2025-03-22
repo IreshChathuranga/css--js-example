@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockups</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        /**{*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*}*/
+        body{
+            /*margin: 0;*/
+            /*padding: 0;*/
+            width: 100%;
+            /*height: 100%;*/
+            /*background: black;*/
+            background-image: url("access/lib/mybackground.png"); /* Add your image */
+            background-size: cover; /* Ensures full coverage */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents repeating */
+            height: 100vh; /* Full viewport height */
+            overflow-x: hidden;
+        }
+        body>div:first-child{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        body>div:nth-child(2){
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-image: url("access/lib/slide1.jpg");
+            background-size: cover;
+        }
+        .navbar{
+            width: 100%;
+            height: 75px;
+            margin: auto;
+        }
+        .myicon{
+            width: 80px;
+            height: 70px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        .nav{
+            z-index: 2;
+            border-bottom: 1px solid #c9ff00;
+            position: fixed;
+            /*right: 0;*/
+            left: 0px;
+            top: 0;
+            /*margin: auto;*/
+            width: 950px;
+            height: 20px;
+            /*float: left;*/
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 200px;
+            /*border-radius: 100px;*/
+            background-color: black rebag(0, 0, 0, -1);
+            backdrop-filter: blur(5px);
+            transition: 0.5s ease;
+        }
+        .navmenu{
+            position: absolute;
+            right: 30px;
+            /*float: right;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        .navmenu li{
+            float: right;
+            list-style: none;
+            /*margin-right: 50px;*/
+            /*margin-left: 200px;*/
+            margin-top: 0px;
+            font-size: 12px;
+            font-family: Arial;
+        }
+        .navmenu li a{
+            margin-left: 50px;
+            /*margin-left: 80px;*/
+            /*margin-right: 50px;*/
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial;
+            color: #c9ff00;
+            transition: 0.3s ease;
+            position: relative;
+        }
+        .navmenu li a:before{
+            content: '';
+            position: absolute;
+            background: #c9ff00;
+            width: 0;
+            height: 2px;
+            bottom: -7px;
+            left: 0;
+            transition: 0.3s ease;
+        }
+        .navmenu li a:hover:before{
+            width: 100%;
+        }
+        .navmenu li a:hover {
+            color: #fff; /* White color on hover */
+            transform: scale(1.1); /* Slightly enlarge the text */
+            text-shadow: 0px 0px 10px #c9ff00; /* Glow effect */
+        }
+        .section{
+            position: relative;
+        }
+        .socialmedia a img{
+            width: 28px;
+            height: 28px;
+            /*padding: 10px;*/
+        }
+        .socialbar{
+            /*border: 1px solid chartreuse;*/
+            /*width: 40px;*/
+            /*height: 200px;*/
+            height: 55vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 2;
+            position: fixed;
+            word-spacing: 10px;
+            transform: translate(-70px, 0);
+            /*top: 170px;*/
+            /*bottom: 0px;*/
+
+            /*margin: auto;*/
+        }
+        .socialmedia a{
+            margin-top: 70px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: #ffffff rebag(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            display: block;
+            margin: 5px;
+            padding: 10px;
+            width: 90px;
+            text-align: right;
+            border-right: 50%;
+            transition: 1s;
+            transition-property: transform;
+        }
+        .socialmedia a:hover{
+            transform: translate(30px, 0);
+        }
+        #facebook:hover{
+            background: #1877F2;
+        }
+        #github:hover{
+            background:  #181717;
+        }
+        #instergram:hover{
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        }
+        #linkedin:hover{
+            background: #0A66C2;;
+        }
+        #profilepic>img:first-child{
+            width: 800px;
+            height: 800px;
+            position: absolute;
+            bottom: 100px;
+        }
+        .description>div:first-child{
+            width: fit-content;
+            color: white;
+            font-size: 40px;
+            font-family: 'Baloo', cursive !important;
+            /* Apply a linear gradient background with your chosen colors */
+            background: linear-gradient(90deg, #8CFF32, #D4FF32, #E9FF32, #FDFF32, #FFFFFF);
+             /*Clip the background to the text */
+            -webkit-background-clip: text;
+            /* Make the text transparent so that the background shows */
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            right: 410px;
+            top: 60px;
+        }
+        .fa-hands-clapping{
+            position: absolute;
+            right: 590px;
+            top:75px;
+            animation: clapAnimation 1s infinite;
+        }
+        .description>div:nth-child(2){
+            color: white;
+            /*font-family: Inter;*/
+            font-size: 50px;
+            position: absolute;
+            top: 100px;
+            right: 290px;
+        }
+        .p1{
+            color: #818274;
+            font-size: 20px;
+            position: absolute;
+            top: 160px;
+            right: 112px;
+        }
+        #name{
+            color: chartreuse;
+            font-family: 'Monoton', cursive !important;
+            font-size: 220px;
+            white-space: nowrap; /* Prevent text from wrapping */
+            position: absolute;
+            top: 340px;
+            animation: scrollText 40s linear infinite; /* Adjust duration as needed */
+            word-spacing: 70px;
+        }
+        /*for fa-hands-clapping*/
+        @keyframes clapAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        /*for #name*/
+        @keyframes scrollText {
+            0% {
+                transform: translateX(10%);
+            }
+            100% {
+                transform: translateX(-30%);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header>
+        <!--            navigation bar-->
+        <div class="navbar">
+            <nav class="nav">
+                <img class="myicon" src="access/lib/IRESHLOGO.png" alt="logo">
+<!--                <a>Iresh</a>-->
+                <ul class="navmenu">
+                    <li><a href="" target="">Home</a></li>
+                    <li><a href="aboutMe.html" target="_parent">Projects</a></li>
+                    <li><a href="aboutMe.html" target="_parent">Assignments</a></li>
+                    <li><a href="aboutMe.html" target="_parent">Gallery</a></li>
+                    <li><a href="aboutMe.html" target="_parent">About Me</a></li>
+                    <li><a href="contact.html" target="_parent">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="section">
+            <!--            left side-->
+            <div class="socialbar">
+                <div class="socialmedia">
+                    <a id="facebook" href="http://facebook.com/my_profile" target="_blank">
+                        <img src="access/lib/newfacebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="socialmedia">
+                    <a id="github" href="http://github.com/IreshChathuranga" target="_blank">
+                        <img src="access/lib/git.png" alt="github">
+                    </a>
+                </div>
+                <div class="socialmedia">
+                    <a id="instergram" href="http://instergram.com/my_profile" target="_blank">
+                        <img src="access/lib/inster.png" alt="instergram">
+                    </a>
+                </div>
+                <div class="socialmedia">
+                    <a id="linkedin" href="http://linkedin.com/my_profile" target="_blank">
+                        <img src="access/lib/link.png" alt="linkedin">
+                    </a>
+                </div>
+            </div>
+            <!--        middle-->
+            <div id="name">
+                IRESH CHATHURANGA
+            </div>
+            <!--        right side-->
+            <div class="description">
+                <div>Hello! I'm</div>
+                <div>UI/UX Designer</div>
+                <p class="p1">"Creative and detail-oriented web <br>designer with a passion for crafting visually <br>appealing, user-friendly, and responsive websites. <br>Proficient in HTML, CSS, JavaScript, and modern design tools, <br>I specialize in creating engaging digital experiences that <br>align with brand identity and user needs.</p>
+                <i class="fa-solid fa-hands-clapping fa-2xl" style="color: #e6ce33;"></i>
+
+            </div>
+        </div>
+    </section>
+</div>
+<div>
+</div>
+</body>
+</html>

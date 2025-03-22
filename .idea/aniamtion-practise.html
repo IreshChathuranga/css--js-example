@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    section{
+      width: 800px;
+      height: 600px;
+      border:3px solid black;
+      position: relative;
+    }
+    div{
+      position: absolute;
+      width: 100px;
+      aspect-ratio: 1/1;
+      background-color: darkred;
+      animation-name: animate;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+    }
+    @keyframes animate {
+      0%{
+        top: 0;
+        left: 0;
+      }
+      25%{
+        transform: rotate(45deg);
+        top: 0;
+        left: 700px;
+      }
+      50%{
+        transform: rotate(90deg);
+        left: 700px;
+        top: 500px;
+      }
+      75%{
+        transform: rotate(180deg);
+        top: 500px;
+        left: 0;
+      }
+      100%{
+        transform: rotate(360deg);
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div></div>
+  </section>
+</body>
+</html>

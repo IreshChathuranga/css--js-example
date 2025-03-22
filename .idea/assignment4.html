@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        body{
+            position: relative;
+        }
+        section{
+            position: absolute;
+            top: 120px;
+            width: 200px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            transform: translate(-130px, 0);
+        }
+        section>div{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background: rebeccapurple;
+            box-shadow: 1px 10px 10px black;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        section>div:hover{
+            transform: translate(120px, 0);
+            transition-property: transform;
+        }
+        section>div>i{
+            position: absolute;
+            top: 20px;
+            left: 150px;
+        }
+        section>div>div{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <div>Menu One</div>
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+            <div>Menu One</div>
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+            <div>Menu One</div>
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+            <div>Menu One</div>
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+            <div>Menu One</div>
+            <i class="fa-solid fa-house"></i>
+        </div>
+    </section>
+</body>
+</html>

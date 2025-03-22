@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        body>div:first-child{
+            width: 100vw;
+            height: 8vh;
+            background-color: #ffffff;
+        }
+        body>div:nth-child(2){
+            width: 100vw;
+            height: 83vh;
+            background-color: #613c91;
+            position: relative;
+        }
+        body>div:nth-child(3){
+            width: 100vw;
+            height: 6vh;
+            position: absolute;
+            bottom: 0;
+            background-color: gray;
+        }
+        nav{
+            position: absolute;
+            right: 0;
+            top: 0px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav ul li {
+            float: left;
+        }
+        /*body>div>img{*/
+        /*    position: absolute;*/
+        /*    left: 15px;*/
+        /*}*/
+        .container {
+            display: grid;
+            place-items: center;
+            height:2vh;
+        }
+
+        .container img {
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .center{
+            width: 80vw;
+            height: 83vh;
+            border: 3px solid #613c91;
+            background-color: #ffffff;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+
+        #nav{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial;
+        }
+        #nav>li>a{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 2px 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+        <div>
+            <div class="container">
+                <img src="access/lib/ig-removebg-preview.png">
+            </div>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contacts</a></li>
+                <li><a>About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <ul id="nav">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contacts</a></li>
+            <li><a>About Us</a></li>
+        </ul>
+        <div class="center"></div>
+    </div>
+    <div></div>
+</body>
+</html>

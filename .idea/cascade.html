@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cascade</title>
+</head>
+<style>
+    button{/*0,0,0,1*/
+        color:red;
+    }
+
+    #my_id{/*0,1,0,0*/
+        color: skyblue;
+    }
+
+    p{
+        color: red;
+    }
+
+    section{
+        color: green;
+    }
+
+    .my-class{
+        color: blueviolet;
+    }
+
+    section>.my-class{
+        color: cyan;
+    }
+
+    section>#p-id{
+        color: chartreuse;
+    }
+
+    #p-id{
+        color:cornsilk;
+    }
+
+</style>
+<body>
+    <button id="my_id" style="color:yellow">click</button>
+
+    <section>
+        <p class="my-class" id="p-id">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fuga, fugiat ipsam iusto libero non totam! Aliquid doloremque fugiat nemo pariatur quisquam sint tempora vitae. Aut ducimus exercitationem laborum voluptatum.
+        </p>
+    </section>
+</body>
+</html>

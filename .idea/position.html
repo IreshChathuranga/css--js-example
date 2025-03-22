@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        /*div{*/
+        /*    !*static position-default position*!*/
+        /*    width: 200px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background-color: crimson;*/
+        /*    border: 1px solid cyan;*/
+        /*    */
+        /*}*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+        /*div{*/
+        /*    !*relative position-default position*!*/
+        /*    width: 200px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background-color: crimson;*/
+        /*    border: 1px solid cyan;*/
+
+        /*    position: relative;*/
+        /*    top: 100px;*/
+        /*    left: 100px;*/
+        /*}*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+        /*section{!*qualify parent*!*/
+        /*    !*absolute position-default position*!*/
+        /*    width: 1000px;*/
+        /*    aspect-ratio: 2/1;*/
+        /*    border: 5px solid cyan;*/
+
+        /*    position: relative;*/
+        /*}*/
+
+        /*div{*/
+        /*    width: 200px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background-color: crimson;*/
+        /*    border: 1px solid cyan;*/
+
+        /*    position: absolute;*/
+        /*    bottom:0;*/
+        /*    !*top: 10px;*!*/
+        /*    !*bottom: 0;*!*/
+        /*}*/
+
+        /*//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+        /*body>div{*/
+        /*    width: 50vw;*/
+        /*    height: 50vh;*/
+        /*    position: absolute;*/
+
+        /*}*/
+
+        /*body>div:first-child{*/
+        /*    background-color: #d11800;*/
+        /*}*/
+
+        /*body>div:nth-child(2){*/
+        /*    background-color: #cad100;*/
+
+        /*    position: absolute;*/
+        /*    right: 0;*/
+        /*    top: 0px;*/
+        /*}*/
+        /*div:nth-child(3){*/
+        /*    background-color: #00d1ab;*/
+
+        /*    position: absolute;*/
+        /*    bottom: 0;*/
+        /*    right: 0;*/
+        /*}*/
+        /*div:nth-child(4){*/
+        /*    background-color: #af0bdc;*/
+        /*    bottom: 0;*/
+        /*}*/
+
+        /*.circle{*/
+        /*    height: 100px;*/
+        /*    width: 100px;*/
+        /*    background-color: #f6ffdc;*/
+        /*    border-radius: 50%;*/
+        /*    display: inline-block;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+        /*.circle1{*/
+        /*    height: 100px;*/
+        /*    width: 100px;*/
+        /*    background-color: #f6ffdc;*/
+        /*    border-radius: 50%;*/
+        /*    display: inline-block;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+        /*.circle2{*/
+        /*    height: 100px;*/
+        /*    width: 100px;*/
+        /*    background-color: #f6ffdc;*/
+        /*    border-radius: 50%;*/
+        /*    display: inline-block;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+        /*.circle3{*/
+        /*    height: 100px;*/
+        /*    width: 100px;*/
+        /*    background-color: #f6ffdc;*/
+        /*    border-radius: 50%;*/
+        /*    display: inline-block;*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+        /*}*/
+
+        /*body>div>span>div{*/
+        /*    height: 50px;*/
+        /*    width: 50px;*/
+        /*    position: absolute;*/
+        /*}*/
+        /*body>div>span>div:first-child{*/
+        /*   background-color: #CAD100FF;*/
+        /*    border-top-left-radius:100%;*/
+
+        /*}*/
+        /*body>div>span>div:last-child{*/
+        /*    background-color: #3d3f07;*/
+        /*    border-bottom-right-radius:100%;*/
+        /*    bottom: 0;*/
+        /*    right: 0;*/
+        /*}*/
+
+        /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+        fixed position
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+        /*!*sticky position*!*/
+        /*section{*/
+        /*    border:5px solid cornflowerblue;*/
+        /*    width: 600px;*/
+        /*}*/
+        /*div{*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: crimson;*/
+        /*    position: sticky;*/
+        /*    top: 0;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--        <div><span class="circle">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </span></div>-->
+<!--        <div><span class="circle1">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </span></div>-->
+<!--        <div><span class="circle2">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </span></div>-->
+<!--        <div><span class="circle3">-->
+<!--            <div></div>-->
+<!--            <div></div>-->
+<!--        </span></div>-->
+
+<!--fied position-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci alias amet architecto assumenda blanditiis consectetur cum debitis, explicabo maxime nam necessitatibus officia optio quis ratione reiciendis rem vero? Aperiam.</p>
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--&lt;!&ndash;sticky position&ndash;&gt;-->
+<!--    <section>-->
+<!--        <div></div>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+
+<!--    </section>-->
+
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid doloremque eius expedita in laudantium modi officia similique velit veniam. Earum error expedita id in ipsam qui ullam vitae voluptatem!</p>-->
+
+
+
+</body>
+</html>

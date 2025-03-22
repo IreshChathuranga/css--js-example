@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS flex box = CSS new layout</title>
+    <link rel="stylesheet" href="access/lib/normalize.css">
+
+    <style>
+        /*part one*/
+        /*section{*/
+        /*    display: flex;*/
+        /*    !*!*flex-direction: row;*! ---default flex-direction*!*/
+        /*    !*flex-direction: column;*!*/
+        /*    !*flex-direction: row-reverse;*!*/
+        /*    !*flex-direction: column-reverse;*!*/
+        /*}*/
+        /*section>div{*/
+        /*    border: 1px solid black;*/
+        /*    margin: 2px;*/
+        /*    padding: 4px;*/
+        /*}*/
+
+        /*part two*/
+        /*        section{*/
+        /*            display: flex;*/
+        /*            !*justify-content: space-between;*!*/
+        /*            !*justify-content: space-around;*!*/
+        /*            justify-content: space-evenly;*/
+        /*        }*/
+        /*        section>div{*/
+        /*            border: 2px solid black;*/
+        /*            background: red;*/
+        /*            width: 100px;*/
+        /*            aspect-ratio: 1/1;*/
+        /*        }*/
+
+
+        part three
+        section{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            display: flex;
+            /*justify-content: center;*/
+            /*align-items: end;*/
+            /*align-items: start;*/
+            justify-content: center;
+        }
+        section>div{
+            background: red;
+            width: 100px;
+            aspect-ratio: 1/1;
+        }
+
+        /*section{*/
+        /*    width: 100%;*/
+        /*    height: 500px;*/
+        /*    border: 5px solid black;*/
+        /*    display: flex;*/
+        /*    justify-content: space-around;*/
+        /*}*/
+        /*section>div{*/
+        /*    border: 3px solid crimson;*/
+        /*    background: hotpink;*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*}*/
+
+        /*section>div:nth-child(2){*/
+        /*    align-self: center;*/
+        /*}*/
+        /*section>div:nth-child(3){*/
+        /*    align-self: end;*/
+        /*}*/
+        /*section>div:nth-child(4){*/
+        /*    align-self: center;*/
+        /*}*/
+        /*section>div:nth-child(5){*/
+        /*    align-self: start;*/
+        /*}*/
+        /*section>div:nth-child(6){*/
+        /*    align-self: center;*/
+        /*}*/
+    </style>
+</head>
+<body>
+part one
+<!--    <section>-->
+<!--        <div>A</div>-->
+<!--        <div>B</div>-->
+<!--        <div>C</div>-->
+<!--        <div>D</div>-->
+<!--        <div>E</div>-->
+<!--    </section>-->
+
+<!--part two-->
+<!--<section>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</section>-->
+
+part three
+<section>
+    <div></div>
+</section>
+
+<!--<section>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</section>-->
+</body>
+</html>
