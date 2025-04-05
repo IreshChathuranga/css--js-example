@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Method</title>
+</head>
+<body>
+
+<script>
+    let str1 = "Hello, World";
+    console.log(str1.charAt(0));
+    console.log(str1.charAt(6));
+    console.log(str1.charAt(3));
+    console.log(str1.charAt(2));
+    console.log(str1.charCodeAt(8));
+    console.log(str1.charCodeAt(2));
+    console.log(str1.charCodeAt(10));
+    console.log(str1.charCodeAt(4));
+    console.log(str1.charCodeAt(6));
+
+    // concat//
+    let value1 = 'Iresh';
+    let value2 = 'Chathuranga';
+
+    let value = value1+value2;
+    console.log(value);
+    console.log(value1.concat(' '+value2));
+    console.log(value2.concat(' '+value1));
+
+    // startsWiith , endsWith//
+
+    let mystr = "www.ijse.lk";
+    console.log(mystr.startsWith("www"));
+    console.log(mystr.endsWith("lk"));
+    console.log(mystr.startsWith("wwe"));
+
+    // localCompare//
+    let x= "Hello";
+    let y = 'Hello';
+    let z = 'Hi';
+    console.log(x.localeCompare(y)); //if same = 0//
+    console.log(x.localeCompare(z));// if not same = -1//
+    console.log(z.localeCompare(x));// 1//
+
+    //replace//
+    let set = "A,B,C,D,E";
+    console.log(set.replace(',','/'));
+    console.log(set.replaceAll(',','/'));
+
+    //Search//
+    let word = 'Hello World!';
+    console.log(word.search('World'));
+    console.log(word.search('Worldx'));
+
+    //slice//
+    console.log(word.slice(6, 12));
+
+    //split//
+    set = "Apple,Mango,Orange";
+    console.log(set.split(""));
+    console.log(set.split(","));
+
+    //subString//
+    console.log(word.substring(6));
+    console.log(word.substring(6 , 12));
+
+    let h1 = 'hello';
+    let h2 = 'hello';
+    let h3 = 'Hello';
+    let h4 = 'Hi';
+    console.log(h1.localeCompare(h2));
+    console.log(h1.localeCompare(h3));
+    console.log(h3.localeCompare(h4));
+    console.log(h4.localeCompare(h3));
+
+    //toUpperCase//
+    x = "hello";
+    console.log(x.toUpperCase());
+    x = "HELLO";
+    console.log(x.toLowerCase());
+
+    //length//
+    console.log(x.length);//get the length of a string //
+
+    //trim//
+    console.log(x.trim());//trim unwanted spaces at the start and end //
+
+</script>
+</body>
+</html>
